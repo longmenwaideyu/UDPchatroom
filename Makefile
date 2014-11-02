@@ -1,6 +1,6 @@
 all:chatServer chatClient
 chatServer:chatServer.c
-	gcc $^ -o $@
+	gcc $^ -o $@ -lpthread
 chatClient:chatClient.c
 	gcc $^ -o $@ -lpthread
 clean:
